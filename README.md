@@ -29,6 +29,23 @@ data_transforms = [
 img_out = data_transforms(img)
 ```
 
+Two parameters can be passed to the transform:
+- mode: choose between BlackBody points sampling or CIED. \[Default is BlackBody\]
+- idx: if idx is provided a specific illuminant is used instead of a random one from the sampled list.
+
+```
+PlanckianJitter(mode="blackbody")
+# randomly selects an illuminant from the BlackBody list.
+
+PlanckianJitter(mode="cied")
+# randomly selects an illuminant from the CIED list.
+
+PlanckianJitter(mode="blackbody", idx=5)
+# selects the illuminant at index 5 of the BlackBody list.
+
+
+```
+
 If you are going to use this code please cite us:
 ```
 t.b.d.

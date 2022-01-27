@@ -42,8 +42,6 @@ PlanckianJitter(mode="cied")
 
 PlanckianJitter(mode="blackbody", idx=5)
 # selects the illuminant at index 5 of the BlackBody list.
-
-
 ```
 
 If you are going to use this code please cite us:

@@ -66,6 +66,9 @@ class PlanckianJitter(object):
                     [0.3217, 0.4719, 0.6882],
                 ]
             )
+        else:
+            raise ValueError(
+                'Mode "' + mode + '" not supported. Please choose between "blackbody" or "CIED".')
 
     def __call__(self, x):
 

@@ -15,18 +15,21 @@ Dependecies
 Example usage with other torchvision trasforms:
 
 ```
-import torchvision.transforms as tranforms
+import torchvision.transforms as transforms
 
 from planckianTransforms import PlanckianJitter
 
-data_transforms = [
+img = Image.open('./examples/flower.jpeg')
+
+data_transforms = transforms.Compose([
             transforms.RandomResizedCrop(size=self.input_height),
             transforms.RandomHorizontalFlip(p=0.5),
             transforms.RandomVerticalFlip(p=0.5),
             transforms.RandomApply([PlanckianJitter(mode="blackbody")], p=0.8),
-        ]
-    
+        ])
+
 img_out = data_transforms(img)
+img_out.save('./examples/out.png')
 ```
 
 Two parameters can be passed to the transform:
@@ -58,5 +61,3 @@ If you are going to use this code please cite us:
 ## License
 
 MIT
-
-

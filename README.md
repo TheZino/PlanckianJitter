@@ -2,8 +2,8 @@
 
 ![](./img.png)
 
-Official implementation of the code from "Planckian jitter: enhancing the color quality of self-supervised visual
-representations".
+Official implementation of the code from ["Planckian jitter: enhancing the color quality of self-supervised visual
+representations"](https://arxiv.org/abs/2202.07993).
 
 Code written in Pytorch v1.8.1.
 
@@ -47,7 +47,12 @@ PlanckianJitter(mode="blackbody", idx=5)
 ## Reference
 If you are going to use this code please cite us:
 ```
-t.b.d.
+@article{zini2022planckian,
+  title={Planckian jitter: enhancing the color quality of self-supervised visual representations},
+  author={Zini, Simone and Buzzelli, Marco and Twardowski, Bart{\l}omiej and van de Weijer, Joost},
+  journal={arXiv preprint arXiv:2202.07993},
+  year={2022}
+}
 ```
 
 ## License

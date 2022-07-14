@@ -52,8 +52,6 @@ PlanckianJitter(mode="blackbody", idx=5)
 # Reference
 If you are going to use this code please cite us:
 ```
-
-
 @article{zini2022planckian,
          title = {Planckian jitter: enhancing the color quality of self - supervised visual representations},
          author = {Zini, Simone and Buzzelli, Marco and Twardowski, Bart{\l}omiej and van de Weijer, Joost},

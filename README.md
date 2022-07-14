@@ -4,15 +4,18 @@
 
 Official implementation of the code from ["Planckian jitter: enhancing the color quality of self - supervised visual representations"](https://arxiv.org/abs/2202.07993).
 
-Now available in [Kornia](https://github.com/kornia/kornia) library!
+## Now available in [Kornia](https://github.com/kornia/kornia) library!
 
+### Dependencies
 
 Code written in Pytorch v1.8.1.
 
-Dependencies
 - Pillow == 7.2.0
 - numpy == 1.19.5
 - torch == 1.8.1
+
+
+## Usage
 
 Example usage with other torchvision transforms:
 

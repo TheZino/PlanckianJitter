@@ -4,9 +4,9 @@
 
 Official implementation of the code from ["Planckian jitter: enhancing the color quality of self - supervised visual representations"](https://arxiv.org/abs/2202.07993).
 
-## Now available in [Kornia](https://github.com/kornia/kornia) library!
+### Now available in [Kornia](https://github.com/kornia/kornia) library!
 
-### Dependencies
+## Dependencies
 
 Code written in Pytorch v1.8.1.
 

@@ -1,12 +1,12 @@
 # Planckian Jitter data augmentation
 
-![](./img.png)
+![](. / img.png)
 
-Official implementation of the code from ["Planckian jitter: enhancing the color quality of self - supervised visual representations"](https://arxiv.org/abs/2202.07993).
+Official implementation of the code from ["Planckian jitter: enhancing the color quality of self - supervised visual representations"](https: // arxiv.org / abs / 2202.07993).
 
-### Now available in [Kornia](https://github.com/kornia/kornia) library!
+# Now available in [Kornia](https://github.com/kornia/kornia) library!
 
-## Dependencies
+# Dependencies
 
 Code written in Pytorch v1.8.1.
 
@@ -15,14 +15,12 @@ Code written in Pytorch v1.8.1.
 - torch == 1.8.1
 
 
-## Usage
+# Usage
 
 Example usage with other torchvision transforms:
 
 ```python
 import torchvision.transforms as tranforms
-
-
 from planckianTransforms import PlanckianJitter
 
 data_transforms = transforms.Compose([
@@ -52,6 +50,8 @@ PlanckianJitter(mode="blackbody", idx=5)
 # Reference
 If you are going to use this code please cite us:
 ```
+
+
 @article{zini2022planckian,
          title = {Planckian jitter: enhancing the color quality of self - supervised visual representations},
          author = {Zini, Simone and Buzzelli, Marco and Twardowski, Bart{\l}omiej and van de Weijer, Joost},

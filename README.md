@@ -21,16 +21,23 @@ Example usage with other torchvision transforms:
 
 ```python
 import torchvision.transforms as tranforms
+from PIL import Image
 from planckianTransforms import PlanckianJitter
 
+img = Image.open('./demo_img/flw.jpg')
+
 data_transforms = transforms.Compose([
-    transforms.RandomResizedCrop(size=self.input_height),
-    transforms.RandomHorizontalFlip(p=0.5),
-    transforms.RandomVerticalFlip(p=0.5),
-    transforms.RandomApply([PlanckianJitter(mode="blackbody")], p=0.8)])
+transforms.RandomResizedCrop(size=img.size[0]),
+transforms.RandomHorizontalFlip(p=0.5),
+transforms.RandomVerticalFlip(p=0.5),
+transforms.RandomApply([PlanckianJitter(mode="blackbody")], p=0.8)])
 
 img_out = data_transforms(img)
+
+img_out.show()
 ```
+
+Run `python3 ./demo.py` to run that demo code.
 
 Two parameters can be passed to the transform:
 - mode: choose between `BlackBody` points sampling or `CIED`. \[Default is `BlackBody`\]

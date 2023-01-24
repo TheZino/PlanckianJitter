@@ -2,7 +2,7 @@
 
 ![](./img.png)
 
-Official implementation of the code from ["Planckian jitter: enhancing the color quality of self - supervised visual representations"](https://arxiv.org/abs/2202.07993).
+Official implementation of the code from ["Planckian Jitter: countering the color-crippling effects of color jitter on self-supervised training"](https://openreview.net/forum?id=Pia70sP2Oi1).
 
 ### Now available in [Kornia](https://github.com/kornia/kornia) library!
 
